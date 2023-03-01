@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 2.75vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+@media (min-width: 769px) {
+  * {
+    font-size: 1.9vw;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: 1.4vw;
+  }
+}
+body {
+  background-color: rgb(240, 238, 228);
+}
+.back-to-top {
+  position: fixed;
+  right: 0.5%;
+  bottom: 1%;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+}
+.back-to-top:hover {
+  cursor: pointer;
+}
+.content {
+  padding-top: 2.25rem;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+video {
+  max-width: 92%;
+}
+.item-price {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+}
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+.section-title > h1 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}

@@ -1,0 +1,52 @@
+#navbar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#navbar ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0.75rem 0rem;
+  margin: 0rem 1.5rem;
+  color: black;
+  transition: border-bottom 0.015s;
+}
+#navbar ul li a:hover {
+  border-bottom: 0.3rem solid black;
+}
+.sticky {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  animation: fadeInDelay 0.8s;
+}
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sticky > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+.sticky ul li {
+  margin: 0rem 1.2rem;
+}

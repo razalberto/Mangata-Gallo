@@ -1,0 +1,9 @@
+header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  margin-top: 0.3rem;
+}
+.header-logo{
+  max-width: 70%;
+}

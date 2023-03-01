@@ -1,0 +1,94 @@
+#jewelry-section{
+  margin-top: 2.5rem;
+}
+#jewelry-gallery{
+  margin: 1.3rem 2.5rem 0rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1%;
+  overflow: hidden;
+  position: relative;
+}
+.next{
+  position: absolute;
+  top: 45%;
+  right: 0%;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  border: none;
+}
+.prev{
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  border: none;
+}
+.next:hover, .prev:hover{
+  opacity: 80%;
+  cursor: pointer;
+}
+.next:active, .prev:active{
+  opacity: 55%;
+}
+.gallery-item{
+  flex: 0 0 24.3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#first{
+  order: -4;
+}
+#second{
+  order: -3;
+}
+#third{
+  order: -2;
+}
+#fourth{
+  order: -1;
+}
+
+.new-tag{
+  color: rgb(117, 117, 117);
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+.gallery-item > .item-name{
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+.gallery-item > .description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+  width: 11em;
+}
+.gallery-item:hover{
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.gallery-item:hover img{
+  transform: scale(1.05);
+}
+.gallery-item > img{
+  max-width: 80%;
+}
+@media (max-width: 768px){
+  .gallery-item{
+    flex: 0 0 32.7%;
+  }
+}
